@@ -1,0 +1,151 @@
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/* Header section  */
+#cbr-header-section{
+    background-color: #264653;
+}
+h1{
+    color: white;
+}
+
+p{
+    color:white;
+}
+h5{
+    color:white; 
+}
+
+
+
+/* Image width  */
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Honda CBR Section  */
+.container{
+    max-width: 1160px;
+    margin: auto;
+}
+
+.cbr-section{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main section  */
+#gray-test-one img{ 
+    filter: grayscale(1);
+    
+}
+#gray-test-two img{ 
+    filter:brightness(100%);
+    
+}
+#gray-test-three img{ 
+    filter:sepia(100%);
+    
+}
+
+
+
+
+
+
+
+
+
+/* happy-client-img  */
+
+#happy-client-img img{
+    position: static;
+    width: 137px;
+    height: 149px;
+    margin-left: 115px;
+    margin-top: 20px;
+    left: calc(50% - 137px/2);
+    top: 40px;
+
+}
+#lecture-background-color{
+    background-color: #ffffff;
+}
+
+
+
+/* Footer section  */
+
+.apps-icon-store{
+    color: lightcoral;
+    text-align: center;
+    width: 160px;
+    height: 140px;
+}
+
+
+
+
+
+
+
+/* Media Query  */
+
+    /* Large media  */
+
+@media only screen and (max-width: 1440px) {
+    .container{
+        width: 100%;
+    }
+}
+
+/* Tablet Version  */
+
+
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 90%;
+    }
+    .cbr-section{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .cbr-text{
+        max-width: 100%;
+    }
+}
+
+
+/* Mobile Media version  */
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .cbr-section{
+        flex-direction: column-reverse;
+    }
+    .cbr-text{
+        max-width: 100%;
+    }
+}
