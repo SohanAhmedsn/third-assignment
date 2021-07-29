@@ -89,7 +89,9 @@ img{
 #lecture-background-color{
     background-color: #ffffff;
 }
-
+.faq{
+    color: orange;
+}
 
 
 /* Footer section  */
@@ -147,5 +149,9 @@ img{
     }
     .cbr-text{
         max-width: 100%;
+    }
+    #faq-control-system{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
