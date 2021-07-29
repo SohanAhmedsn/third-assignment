@@ -30,18 +30,18 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="#home" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-white" href="#shoes">Shop</a>
+                        <a class="nav-link text-white" href="#shop">Shop</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-white" href="#backpack">News</a>
+                        <a class="nav-link text-white" href="#news">News</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-white" href="#subscriber">Contact</a>
+                        <a class="nav-link text-white" href="#contact">Contact</a>
                       </li>
-                      <a href="nav-link">
+                      <a href="nav-link #login">
                           <button class="btn btn-outline-info rounded-pill ms-1 text-white">Login</button>
                       </a>
                     </ul>
@@ -59,13 +59,36 @@
         <!-- Honda CBR section  -->
 
         <div class="container-fluid cbr-section my-5 pt-4" id="cbr-header-section">
-            <div class="cbr-text">
-                <p>Computer-controlled digital transistorized with electronic advance</p>
-                <h1>Honda CBR 300R</h1>
-                <h5>The Honda CBR is a family of bikes in the Indian two-wheeler market manufactured by Honda.</h5>
-                <a href="nav-link">
-                    <button class="btn btn-outline-info rounded-pill ms-1">Login</button>
-                </a>
+            <div class="cbr-text ps-2">
+                <p class="title-para">Computer-controlled digital transistorized with electronic advance</p>
+                <h1 class="name-honda-cbr">Honda CBR 300R</h1>
+                <h5>The Honda CBR is a family of bikes in the Indian <br> two-wheeler market manufactured by Honda.</h5>
+              
+                <div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Purchase
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">CBR Bike info</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Are you want to know CBR Bike?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+                          <button type="button" class="btn btn-primary">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="cbr-bike-image">
                 <img src="images/header-bike.png" alt="">
@@ -86,7 +109,7 @@
             
               <div class="container bg-light my-5">
                 <h1 class="text-dark text-center fw-bold">Fetured Bike 2021 </h1>
-                <p class="text-dark text-center fw-bold text-info">Best bike collection</p>
+                <p class="text-success text-center fw-bold text-info">Best bike collection</p>
                 <hr class="bg-secondary">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -121,7 +144,7 @@
             <h1 class="text-center text-dark">Latest News</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card h-100 border-0">
+                  <div class="card h-100 border-0 shadow-lg">
                     <img src="images/bike-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title text-dark">Ducati XDIAVEL S-73</h5>
@@ -133,7 +156,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border-0">
+                  <div class="card h-100 border-0 shadow-lg">
                     <img src="images/bike-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-dark">Motorcycles & Scooters</h5>
@@ -145,7 +168,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100 border-0">
+                  <div class="card h-100 border-0 shadow-lg">
                     <img src="images/bike-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-dark">2021 Honda CBR500R</h5>
@@ -161,60 +184,49 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         <!-- Happy Clients says  -->
 
         <div class="container my-5">
-            <h1 class="text-center text-dark">Happy Clients says</h1>
+            <h1 class="text-center text-dark pt-2">Happy <span class="talk-to-client">Clients says</span></h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100" id="happy-client-img">
-                    <img src="images/user-1.png" class="card-img-top rounded-circle" alt="...">
+                    <img src="images/user-1.png" class="card-img-top rounded-circle shadow-sm" alt="...">
                     <div class="card-body">
                       <h5 class="card-title text-center text-dark">Slate helps you see how many more days you need  to work to reach your financia goal for the month and year.</h5>  
                     </div>
                     <div class="card-footer border-0 bg-gradient" id="lecture-background-color">
-                        <p class="text-center text-dark"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p> 
-                        <p class="text-center text-dark">Regina Miles</p> 
-                        <p class="text-center text-dark">Banker</p>
+                        <p class="text-center text-dark"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p> 
+                        <p class="text-center text-info">Regina Miles</p> 
+                        <p class="text-center text-success">Banker</p>
                     </div>
                     
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100" id="happy-client-img">
-                    <img src="images/user-2.png" class="card-img-top rounded-3" alt="...">
+                    <img src="images/user-2.png" class="card-img-top rounded-3 shadow-sm" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center text-dark">Slate helps you see how many more days you need  to work to reach your financia goal for the month and year.</h5> 
                     </div>
                     <div class="card-footer border-0 bg-gradient" id="lecture-background-color">
-                        <p class="text-center text-dark"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p> 
-                        <p class="text-center text-dark">Regina Miles</p> 
-                        <p class="text-center text-dark">Banker</p>
+                        <p class="text-center text-dark"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p> 
+                        <p class="text-center text-info">Regina Miles</p> 
+                        <p class="text-center text-success">Banker</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100" id="happy-client-img">
-                    <img src="images/user-3.jpg" class="card-img-top rounded-circle" alt="...">
+                    <img src="images/user-3.jpg" class="card-img-top rounded-circle shadow-sm" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <h5 class="card-title text-center text-dark">Slate helps you see how many more days you need  to work to reach your financia goal for the month and year.</h5> 
                     </div>
                     <div class="card-footer border-0 bg-gradient" id="lecture-background-color">
-                        <p class="text-center text-dark"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p> 
-                        <p class="text-center text-dark">Regina Miles</p> 
-                        <p class="text-center text-dark">Banker</p>
+                        <p class="text-center text-dark"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p> 
+                        <p class="text-center text-info">Regina Miles</p> 
+                        <p class="text-center text-success">Banker</p>
                     </div>
                   </div>
                 </div>
@@ -224,63 +236,59 @@
 
         <!-- Frequently Asked Questions  -->
 
+        <section class="container mb-5 mt-5">
+          <h1 class="d-flex justify-content-center p-5 text-white-5 text-dark"> Frequently Asked <span class="text-danger"> Questions</span></h1>
+
+          <div class="row  g-5">
+            <div class="col-lg-6 col-md-12 col-sm-2 ps-5 text-white">
+              <img style="width: 100%;" src="images/faq.png" alt="">
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      What are the most important things I should know about riding a bike?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p class="text-dark">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      How can I tell if my helmet is old and I need a new one?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <p class="text-dark">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      What rules should I follow when riding my bike?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <p class="text-dark">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
 
 
         
-        <div class="container my-5">
-         
-           <div class="row align-content-center justify-content-center">
-            <h1 class="text-center text-success">Frequently Asked <span class="faq">Questions</span></h1>
-            <div class="column col-6">
-            <div>
-              <img src="images/faq.png" alt="">
-            </div>
-
-              </div>
-
-              <div class="column col-6 align-items-center mt-4">
-                <div class="accordion" id="accordionPanelsStayOpenExample" id="cbr-header-section">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Rules for riding on road shoulders#1 
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                      <div class="accordion-body">The speed limit is 90km/h or more. Your speed is 30km/h or less.   You give way to bicycle riders or other motorcycle riders already using the shoulder. You are not riding on any unsealed parts of the road. There are no roadworks. You are not in a tunnel. 
-                </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Helmet labels and stickers#2 
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                      <div class="accordion-body">
-                        Helmets must display either a stitched label on the inside of the helmet or a sticker on the outside of the helmet, indicating compliance with the approved standards.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Motorcycle control rules#3 
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                      <div class="accordion-body">
-                        You must stay in control of your motorcycle at all times. You must sit with 1 leg on either side of your seat at all times when riding a motorcycle, but you can lift your leg from the footrests or raise yourself from the seat if you need to while riding.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-           </div>
-          </div>
-    
-
+     
 
 
 
@@ -301,14 +309,16 @@
             <div class="row text-center text-dark">
                 <div class="col-md-4">
                     <hr class="light">
-                    <img src="images/w3newbie.png" alt="">
-                    <hr class="light">
-                    <p>Download Now</p>
-                    <p>License</p>
+                    <p>Vehicle</p>
+                    <p>Researh Tools</p>
+                    <p>Accessories</p>
+                    <p>Experience CBR</p>
+                    <p>Dealer Info</p>
+                    <p>Download</p>
+                    <p>Other</p>
                    
                 </div>
                 <div class="col-md-4">
-                    <hr class="light">
                     <hr class="light">
                     <p>About</p>
                     <p>Features</p>
@@ -326,12 +336,12 @@
                    <img class="apps-icon-store" src="images/apps-twin.jpg" alt="">
                
                 </div>
-                <div class="col-12">
-                    <hr class="light">
-                    <h5>&copy; cbrmotorbike.com</h5>
-                </div>
+                
             </div>  
         </div>
+        <div class="col-12">
+          <h5 class="text-center bg-white text-dark">&copy; cbrmotorbike.com</h5>
+      </div>
 
     </footer>
 

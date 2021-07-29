@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 
 
 
@@ -6,6 +8,10 @@
 
 *{
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -24,6 +30,16 @@ p{
 }
 h5{
     color:white; 
+}
+
+.title-para{
+    font-size: 12px;
+    padding-top: 20px;
+}
+.name-honda-cbr{
+    font-size: 50px;
+    color: #ffa500;
+    text-shadow: 2px 1px;
 }
 
 
@@ -51,6 +67,9 @@ img{
     align-items: center;
 }
 
+/* Feature Bike  */
+
+
 
 /* Main section  */
 #gray-test-one img{ 
@@ -75,6 +94,11 @@ img{
 
 
 /* happy-client-img  */
+
+
+.talk-to-client{
+    color: #ffa500;
+}
 
 #happy-client-img img{
     position: static;
@@ -150,8 +174,6 @@ img{
     .cbr-text{
         max-width: 100%;
     }
-    #faq-control-system{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+   
+    
 }
